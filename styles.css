@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif !important;
+}
+body {
+  background-color: aqua !important;
+}
+.main {
+  width: 100%;
+  height: 100vh;
+  /* background-color: green; */
+  display: flex;
+  justify-content: center;
+  
+}
+.row1 {
+  height: 590px;
+  width: 100%;
+}
+.row1-col-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.head {
+  margin: 20px 0;
+}
+.head h1 {
+  color: blue;
+}
+.head h1 span {
+  color: red;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+textarea {
+  width: 700px;
+  height: 400px;
+  background-color: blueviolet;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  resize: none !important;
+  margin-bottom: 10px !important;
+  font-size: 15px !important;
+  caret-color: yellow;
+  padding: 20px;
+  color: white;
+}
+textarea::placeholder {
+  color: white;
+}
+.select-listen{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+button{
+    background-color: blueviolet;
+    color: white;
+    font-size: 16px;
+    padding: 10px 35px;
+    outline: none;
+    border: none;
+    border-radius: 35px !important;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button i{
+    font-size: 25px !important; 
+}
+.select-wrapper{
+    flex: 1;
+    height: 40px;
+    border-radius: 50px;
+    background-color: blueviolet;
+    appearance: none;
+    border: none;
+    outline: none;
+    position: relative;
+}
+select{
+    width: 100%;
+    height: 45px;
+    border-radius: 50px;
+    background-color: blueviolet;
+    appearance: none;
+    border: none;
+    outline: none;
+    padding: 5px 20px;
+    cursor: pointer;
+    color: white;
+}
+select option{
+    background-color: rgb(38, 157, 237);
+}
+select option:hover{
+    background-color: rgb(245, 206, 206) !important;
+}
+select::placeholder{
+    padding-right: 50px !important;
+}
+.select-wrapper::after{
+   content: "▽" !important;
+   /* display: inline-block; */
+   /* width: 25px;
+   height: 25px; */
+   font-size: 25px;
+   color: white;
+   position: absolute;
+   right:20px;
+   top:2px;
+}
+.col1{
+   width: 100%;
+   height: 2px;
+   background-color: blue;
+}
+
+@media screen and (max-width:768px) {
+    .head h1{
+        font-size: 30px;
+    }
+    textarea{
+        width: 500px;
+        height:350px ;
+    }
+    .row1{
+        height: 510px;
+    }
+    .select-listen{
+        width: 500px;
+    }
+    select {
+        font-size: 14px !important;
+       
+    }
+}
+
+@media screen and (max-width:530px) {
+    .head h1{
+        font-size: 30px;
+    }
+    textarea{
+        width: 450px;
+        height:350px ;
+    }
+    .row1{
+        height: 510px;
+    }
+    .select-listen{
+        width: 450px;
+    }
+    select {
+        font-size: 14px !important;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .head h1{
+        font-size: 27px;
+    }
+    textarea{
+        width: 400px;
+        height:350px ;
+    }
+    .row1{
+        height: 510px;
+    }
+    .select-listen{
+        width: 400px;
+    }
+    select {
+        font-size: 14px !important;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .head h1{
+        font-size: 25px;
+    }
+    textarea{
+        width: 380px;
+        height:350px ;
+    }
+    .row1{
+        height: 510px;
+    }
+    .select-listen{
+        width: 380px;
+    }
+    select {
+        font-size: 14px !important;
+    }
+}
+
+@media screen and (max-width:395px) {
+    .head h1{
+        font-size: 20px;
+    }
+    textarea{
+        width: 310px;
+        height:350px ;
+    }
+    .row1{
+        height: 510px;
+    }
+    .select-listen{
+        width: 310px;
+    }
+    select {
+        font-size: 10px !important;
+    }
+    .select-wrapper::after{
+        content: "▽" !important;
+        font-size: 20px;
+        color: white;
+        position: absolute;
+        right:20px;
+        top:7px;
+     }
+}
+
+@media screen and (max-width:342px) {
+    .head h1{
+        font-size: 18px;
+    }
+    textarea{
+        width: 270px;
+        height:350px ;
+    }
+    .row1{
+        height: 530px;
+    }
+    .select-listen{
+        width: 270px;
+    }
+    select {
+        font-size: 12px !important;
+    }
+    button{
+        padding: 10px 15px;
+    }
+    select{
+        padding: 5px 10px;
+    }
+    .select-wrapper::after{
+        content: "▽" !important;
+        font-size: 20px;
+        color: white;
+        position: absolute;
+        right:10px;
+        top:7px;
+     }
+}
